@@ -25,4 +25,6 @@ EXPOSE 1880
 # Environment variable holding file path for flows configuration
 ENV FLOWS=flows.json
 
+USER root
+
 CMD ["npm", "start", "--", "--userDir", "/data"]
